@@ -16,7 +16,6 @@ npm install --save jsoform
 import React, { Component } from 'react'
 
 import JSOForm from 'jsoform'
-import 'jsoform/dist/index.css'
 const App = () => {
   const [state,setState] = React.useState({
     myObj: {
