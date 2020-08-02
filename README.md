@@ -5,13 +5,18 @@
 [![NPM](https://img.shields.io/npm/v/jsoform.svg)](https://www.npmjs.com/package/jsoform) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
-* Requiring Bulma for styling
+* Currently, this plugin's available for Bulma-styled site only, as I could reduce efforts on styling forms components.
+* You need to preload Bulma CSS from CDN/Static files first.
 ```bash
 npm install --save jsoform
 ```
 
 ## Usage
-
+* Our main purpose is `formilizing` aka producing a editable form for a JS Objects as quickest as possible with least configuration needed.
+* Props:
+  - `depth`: Default is 2. Nested depth to formilize starts with 0. Deeper nested children will be formilized as JSON string.
+  - `baseObj`: Object to formilize.
+  - `onObjChange`: Handler for update our object
 ```jsx
 import React, { Component } from 'react'
 
@@ -36,7 +41,7 @@ const App = () => {
   let onChange = function(mutateObj){
     setState({...this.state, myObj: mutateObj});
   }
-  return <JSOForm  baseObj={state.myObj} onObjChange={onChange} />
+  return <JSOForm depth={2} baseObj={state.myObj} onObjChange={onChange} />
 }
 class Example extends Component {
   render() {

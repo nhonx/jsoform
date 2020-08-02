@@ -1,6 +1,6 @@
 {
   "name": "jsoform",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generate an Bulma-used form from any JS object and easily edit it. Supporting text field, array, nesting object,.. editing.",
   "author": "nhonx",
   "license": "MIT",

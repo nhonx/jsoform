@@ -28,7 +28,7 @@ const App = () => {
   }
   return (
   <div className="container" style={{width: "500px"}}>
-    <JSOForm  baseObj={state.myObj} onObjChange={onChange} />
+    <JSOForm depth={0} baseObj={state.myObj} onObjChange={onChange} />
   </div>
     )
 }

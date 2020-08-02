@@ -6,7 +6,7 @@ export class JSOForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      limitDepth: 2,
+      limitDepth: !isNaN(props.depth) ? parseInt(props.depth): 2,
       baseObj: this.props.baseObj,
     };
     this.onChange = this.onChange.bind(this);
