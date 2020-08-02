@@ -1,6 +1,6 @@
 {
   "name": "jsoform",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "Generate an Bulma-used form from any JS object and easily edit it. Supporting text field, array, nesting object,.. editing.",
   "author": "nhonx",
   "license": "MIT",
@@ -45,9 +45,15 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "@babel/runtime": "^7.9.6",
+    "babel-preset-react-app": "^9.1.2"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "emotion": "^10.0.27"
+  }
 }
