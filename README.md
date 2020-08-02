@@ -31,9 +31,9 @@ npm install --save jsoform
 ```
   - Each key-value pair in our main object will be formilized into a Form Component with its Key as label and its Value as default value.
   - Currently, we support types of nested fields:
-    - Text: formilized to a simple text input
-    - Nested: If this field is a child object, its children will be recursively formilizied. We do have a `depth` props to control how deep we recursive.
-    - Array/List: formilized to a custom control which allow us to re-order/add/remove its elements. 
+    - *Text*: formilized to a simple text input
+    - *Nested*: If this field is a child object, its children will be recursively formilizied. We do have a `depth` props to control how deep we recursive.
+    - *Array/List*: formilized to a custom control which allow us to re-order/add/remove its elements. 
 * Props:
   - `depth`: Default is 2. Nested depth to formilize starts with 0. Deeper nested children will be formilized as JSON string.
   - `baseObj`: Object to formilize. 
@@ -79,7 +79,6 @@ Result:
 ## Wishlist
 - Support more CSS libraries like Bootstrap, Materialize, Ant,...
 - Overriden class names via props to customize form styling.
-- 
 
 ## License
 
