@@ -76,8 +76,7 @@ class Example extends Component {
 }
 ```
 Result:
-
-![Image](https://i.imgur.com/JeaHodf.png "Result")
+<img src="https://i.imgur.com/JeaHodf.png" width="480" height="680" />
 
 ## Wishlist
 - Overriden class names via props to customize form styling.
