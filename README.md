@@ -75,7 +75,7 @@ class Example extends Component {
   }
 }
 ```
-Result:
+
 <img src="https://i.imgur.com/JeaHodf.png" width="480" height="680" />
 
 ## Wishlist
